@@ -10,11 +10,11 @@ function minDistr(num) {
 
 
 if (!value || value.trim() === '' || isNaN(value)) {
-    alert('введенное значение не является целым положительным числом');
+    console.log('введенное значение не является целым положительным числом');
 } else if (!Number.isInteger(+value)) {
-    alert('введенное значение является дробным числом');
+    console.log('введенное значение является дробным числом');
 } else if (value <= 1) {
-    alert('NaN');
+    console.log('NaN');
 } else {
-    alert(minDistr(value));
+    console.log(minDistr(value));
 }
